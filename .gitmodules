@@ -1,0 +1,3 @@
+[submodule "linux-hyperv"]
+	path = linux-hyperv
+	url = https://github.com/romank-msft/linux-hyperv
