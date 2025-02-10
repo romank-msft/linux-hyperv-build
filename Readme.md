@@ -25,11 +25,11 @@ Use at your own risk.
 ```sh
 sudo apt-get update
 # Toolchains:
-sudo apt-get install gcc-x86-64-linux-gnu gcc-aarch64-linux-gnu
+sudo apt-get install -y gcc-x86-64-linux-gnu gcc-aarch64-linux-gnu
 # To build the kernel:
-sudo apt-get install build-essential bc flex bison libssl-dev libelf-dev
-# For the `qemu-img` utility:
-sudo apt-get install qemu-system
+sudo apt-get install -y build-essential bc flex bison libssl-dev libelf-dev
+# For the `qemu-img` utility and disk partitioning
+sudo apt-get install -y qemu-system parted dosfstools
 ```
 
 ### Clone the repo
