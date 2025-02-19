@@ -29,7 +29,10 @@ sudo apt-get install -y gcc-x86-64-linux-gnu gcc-aarch64-linux-gnu
 # To build the kernel:
 sudo apt-get install -y build-essential bc flex bison libssl-dev libelf-dev
 # For the `qemu-img` utility and disk partitioning
-sudo apt-get install -y qemu-system parted dosfstools
+sudo apt-get install -y qemu-utils parted dosfstools
+
+# If you'd like to play with qemu as well
+sudo apt-get install -y qemu-system qemu-user-static
 ```
 
 ### Clone the repo

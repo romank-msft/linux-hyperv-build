@@ -529,7 +529,7 @@ CONFIG_HOTPLUG_CPU=y
 # CONFIG_LEGACY_VSYSCALL_XONLY is not set
 CONFIG_LEGACY_VSYSCALL_NONE=y
 CONFIG_CMDLINE_BOOL=y
-CONFIG_CMDLINE="rdinit=/sbin/init earlyprintk=ttyS0 console=ttyS0 nokaslr oops=panic panic_on_warn=0 panic=0 ftrace_dump_on_oops=orig_cpu debug single"
+CONFIG_CMDLINE="root=/dev/sda2 rw earlyprintk=ttyS0 console=ttyS0 nokaslr oops=panic panic_on_warn=0 panic=0 ftrace_dump_on_oops=orig_cpu debug single"
 # CONFIG_CMDLINE_OVERRIDE is not set
 # CONFIG_MODIFY_LDT_SYSCALL is not set
 # CONFIG_STRICT_SIGALTSTACK_SIZE is not set

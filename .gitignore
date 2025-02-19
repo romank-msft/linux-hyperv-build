@@ -20,8 +20,12 @@
 *.raw
 *.img
 
+*.old
 /build/
 /out/
+
+initrd-arm64.cpio.gz
+initrd-x86_64.cpio.gz
 
 *.a
 *.asn1.[ch]

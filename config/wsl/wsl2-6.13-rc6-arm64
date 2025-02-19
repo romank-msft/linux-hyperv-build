@@ -579,7 +579,7 @@ CONFIG_ARM64_CONTPTE=y
 # Boot options
 #
 CONFIG_ARM64_ACPI_PARKING_PROTOCOL=y
-CONFIG_CMDLINE="rdinit=/sbin/init earlycon=pl011,0xeffec000,115200 console=ttyAMA0 nokaslr oops=panic panic_on_warn=0 panic=0 ftrace_dump_on_oops=orig_cpu debug single"
+CONFIG_CMDLINE="root=/dev/sda2 rw earlycon=pl011,0xeffec000,115200 console=ttyAMA0 nokaslr oops=panic panic_on_warn=0 panic=0 ftrace_dump_on_oops=orig_cpu debug single"
 CONFIG_CMDLINE_FROM_BOOTLOADER=y
 # CONFIG_CMDLINE_FORCE is not set
 CONFIG_EFI_STUB=y
