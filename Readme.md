@@ -41,7 +41,7 @@ This repository uses a submodule that points to the Linux kernel source
 tree. That said, here is how to clone:
 
 ```sh
-git clone --recurse https://github.com/kromych/linux-hyperv-build
+git clone --recurse https://github.com/romank-msft/linux-hyperv-build
 ```
 
 NOTE: This repo hosts few binary files for the sake of simplicity.
