@@ -38,6 +38,7 @@ class KernelBuilder:
 
         makeargs = ["-j", str(PARALLELISM_MULTIPLIER*os.cpu_count()),
                     f"ARCH={self.arch}",
+                    "KCFLAGS=-std=gnu11 -Wno-unterminated-string-initialization", "CFLAGS_KERNEL=-std=gnu11 -Wno-unterminated-string-initialization",
                     f"INSTALL_MOD_PATH={self.out_dir}/modules",
                     f"INSTALL_HDR_PATH={self.out_dir}/headers"
         ]
