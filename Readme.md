@@ -55,8 +55,8 @@ files and all architectures:
 ./build-initrd.py x86_64
 ./build-initrd.py arm64
 
-./build-kernel.py x86_64 -wrc config/wsl/wsl2-6.13-rc6-x64 -l linux-hyperv
-./build-kernel.py arm64 -wrc config/wsl/wsl2-6.13-rc6-arm64 -l linux-hyperv
+./build-kernel.py x86_64 -wrc config/wsl/wsl2-6.16-x64 -l linux-hyperv
+./build-kernel.py arm64 -wrc config/wsl/wsl2-6.16-arm64 -l linux-hyperv
 
 rm -f ./arm64.img ./arm64.vhdx && sudo ./build-disk-image.py arm64.img arm64 --target-image arm64.vhdx
 rm -f ./x64.img ./x64.vhdx && sudo ./build-disk-image.py x64.img x86_64 --target-image x64.vhdx
