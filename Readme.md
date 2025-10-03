@@ -55,8 +55,8 @@ files and all architectures:
 ./build-initrd.py x86_64
 ./build-initrd.py arm64
 
-./build-kernel.py x86_64 -wrc config/wsl/wsl2-6.16-x64 -l linux-hyperv
-./build-kernel.py arm64 -wrc config/wsl/wsl2-6.16-arm64 -l linux-hyperv
+./build-kernel.py x86_64 -wrc config/wsl/wsl2-6.17-x64 -l linux-hyperv
+./build-kernel.py arm64 -wrc config/wsl/wsl2-6.17-arm64 -l linux-hyperv
 
 rm -f ./arm64.img ./arm64.vhdx && sudo ./build-disk-image.py arm64.img arm64 --target-image arm64.vhdx
 rm -f ./x64.img ./x64.vhdx && sudo ./build-disk-image.py x64.img x86_64 --target-image x64.vhdx
@@ -67,7 +67,7 @@ Much more often than not, only some of that is needed. Note that omitting the `-
 when building the kernel reuses the objects from the latest build to save a lot of time.
 Below are the details on how you may get more out of the provided tools.
 
-## Buidling the kernel
+## Building the kernel
 
 ```sh
 usage: build-kernel.py [-h] [-v] [-l LINUX] [-i INITRD] [-w] [-r] -c CONFIG [-m] {x86_64,arm64}
